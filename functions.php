@@ -1,4 +1,6 @@
 <?php
+
+add_filter( 'woocommerce_background_image_regeneration', '__return_false' );
 /*
  */
 add_action( 'wp_enqueue_scripts', 'storefront_child_enqueue_styles' );
@@ -62,3 +64,13 @@ function woo_shortcode_box( $atts, $content = null ) {
 } // End woo_shortcode_box()
 
 add_shortcode( 'box', 'woo_shortcode_box' );
+
+/* WooCommerce: The Code Below Removes Checkout Fields */
+
+//add_filter( 'woocommerce_checkout_fields' , 'storefront_override_checkout_fields' );
+
+function storefront_override_checkout_fields( $fields ) {
+	unset($fields['billing']['billing_company']);
+	unset($fields['billing']['billing_address_2']);
+	return $fields;
+}
