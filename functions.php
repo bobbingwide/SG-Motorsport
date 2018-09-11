@@ -1,6 +1,7 @@
 <?php
 
 add_filter( 'woocommerce_background_image_regeneration', '__return_false' );
+add_filter( 'storefront_menu_toggle_text', '__return_empty_string' );
 /*
  */
 add_action( 'wp_enqueue_scripts', 'storefront_child_enqueue_styles' );
