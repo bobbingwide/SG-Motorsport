@@ -27,3 +27,23 @@ Author URI: https://www.oik-plugins.com/author/bobbingwide
 	/* padding: 0; */
 	margin: 0;
 }
+
+.main-navigation ul li.smm-active .widget ul#menu-products li {
+	float: left;
+	display: block;
+	padding: 0px 5px;
+}
+
+
+.main-navigation ul li.smm-active .widget ul li:hover {
+	text-decoration: underline;
+}
+
+div.smm-row {
+	margin-bottom: 20px;
+}
+
+a span.tel span.type,
+a span.tel span.sep {
+	color: #ffffff;
+}
