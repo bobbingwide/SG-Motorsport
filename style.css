@@ -47,3 +47,21 @@ a span.tel span.type,
 a span.tel span.sep {
 	color: #ffffff;
 }
+
+.widget_product_categories ul li::before ,
+.widget_product_categories ul li.current-cat::before {
+	content: '';
+}
+
+.widget-area .widget a:not(.button) {
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.widget-area .widget a:not(.button):hover {
+	text-decoration: underline;
+}
+
+.widget_product_categories ul li {
+	padding-left: 0px;
+}
