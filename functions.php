@@ -1,7 +1,22 @@
 <?php
 
+
+
 add_filter( 'woocommerce_background_image_regeneration', '__return_false' );
 add_filter( 'storefront_menu_toggle_text', '__return_empty_string' );
+
+/** 
+ * This is no good since the colour is used for the whole of the header
+ * https://wp-a2z.org/oik_hook/theme_mod_name/
+ 
+ */
+//add_filter( "theme_mod_storefront_header_background_color", "sg_header_background_color" );
+
+function sg_header_background_color( $color ) {
+	return( '#ffffff' );
+}
+
+
 /*
  */
 add_action( 'wp_enqueue_scripts', 'storefront_child_enqueue_styles' );
