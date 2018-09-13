@@ -5,7 +5,7 @@
 * Tags: e-commerce, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, post-formats, rtl-language-support, sticky-post, threaded-comments
 * Requires at least: 4.9.8
 * Tested up to: 4.9.8
-* Version: 0.0.1
+* Version: 0.0.2
 * License: GPLv2 or later
 * License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,7 +25,16 @@ Implemented on sgmotorsport.biz
 6. Optionally, install, activate and configure plugins from the WooCommerce Storefront Extensions Bundle.
 
 
-## Change Log 
+## Change Log
+ 
+# 0.0.2
+* Changed: Improve formatting of Customer services telephone
+* Changed: Custom styling for the Product Categories widget
+* Added: Styling for the widgets in the mega menu
+* Noted: Experimented with filters to set the mega menu background colour
+* Changed: Hide the word 'Menu' for the hamburger menu
+
+
 # 0.0.1
 * Added: screenshot.png
 * Tested: with Storefront 2.3.3
