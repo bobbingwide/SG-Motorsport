@@ -17,9 +17,10 @@ function sg_header_background_color( $color ) {
 }
 
 
-/*
+/** 
+ * No need to enqueue the child theme styles ourselves as Storefront already does this.
  */
-add_action( 'wp_enqueue_scripts', 'storefront_child_enqueue_styles' );
+//add_action( 'wp_enqueue_scripts', 'storefront_child_enqueue_styles' );
 function storefront_child_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'child-style',
