@@ -46,6 +46,11 @@ div.smm-row {
 a span.tel span.type,
 a span.tel span.sep {
 	color: #ffffff;
+	font-size: 16px;
+}
+
+a span.tel span.value {
+	display: block;
 }
 
 .widget_product_categories ul li::before ,
@@ -64,4 +69,5 @@ a span.tel span.sep {
 
 .widget_product_categories ul li {
 	padding-left: 0px;
+	margin-bottom: 0.5em;
 }
