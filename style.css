@@ -71,3 +71,7 @@ a span.tel span.value {
 	padding-left: 0px;
 	margin-bottom: 0.5em;
 }
+
+div.entry-content h1 {
+	display: none; 
+}
