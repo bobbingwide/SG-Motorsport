@@ -4,6 +4,25 @@
 
 add_filter( 'woocommerce_background_image_regeneration', '__return_false' );
 add_filter( 'storefront_menu_toggle_text', '__return_empty_string' );
+add_filter( 'bw_email_message', 'sgm_bw_email_message', 11, 2 );
+
+
+/**
+ * Appends From email and contact name to the contact form message
+ * 
+ * Needed since easy-wp-smtp overrides the From email address.      
+ * Since we're in the 'bw_email_message' filter we expect bw_replace_fields to be available.
+ *  
+ * @param string $message the email content
+ * @param array $fields array of name value pairs
+ * @return string updated message 
+ */
+function sgm_bw_email_message( $message, $fields ) {
+	bw_trace2();
+	$extra_bits = bw_replace_fields( "<br />From: %from%<br />Name: %contact%", $fields );
+	$message .= $extra_bits;
+	return $message;
+}
 
 /** 
  * This is no good since the colour is used for the whole of the header
