@@ -43,14 +43,32 @@ div.smm-row {
 	margin-bottom: 20px;
 }
 
-a span.tel span.type,
-a span.tel span.sep {
+.smm-mega-menu a span.tel span.type,
+.smm-mega-menu a span.tel span.sep {
 	color: #ffffff;
 	font-size: 16px;
 }
 
-a span.tel span.value {
+.smm-mega-menu a span.tel span.value {
 	display: block;
+}
+
+.sfb-footer-bar a span.tel {
+	display: block;
+}
+
+.sfb-footer-bar a span.type,
+.sfb-footer-bar a span.sep {
+	color: #9aa0a7;
+	font-weight: 600;
+	
+}
+
+.sfb-footer-bar p.email {
+	font-weight: 600;
+}
+.sfb-footer-bar p.email a {
+	font-weight: normal;
 }
 
 .widget_product_categories ul li::before ,
