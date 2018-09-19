@@ -1,5 +1,4 @@
-# SG-Motorsport 
-![screenshot](https://raw.githubusercontent.com/bobbingwide/SG-Motorsport/master/screenshot.png)
+=== SG-Motorsport ===
 
 * Contributors: bobbingwide, Stephen Goodyear
 * Donate link: https://www.oik-plugins.com/oik/oik-donate/
@@ -12,11 +11,11 @@
 
 WordPress child theme of WooCommerce's Storefront theme, for SG Motorsport
 
-## Description 
-Implemented on sgmotorsport.biz
+== Description ==
+Implemented on sgmotorsport.biz 
 
 
-## Installation 
+== Installation ==
 
 1. Install the Storefront parent theme
 2. Download the SG-Motorsport child theme
@@ -27,31 +26,31 @@ Implemented on sgmotorsport.biz
 7. Optionally, install, activate and configure other WooCommerce related plugins.
 
 
-## Change Log	
+== Change Log	==
 
-# 0.0.3 
-* Added: Support co-existence of [bw_contact_form] with Easy WP SMTP https://github.com/bobbingwide/sg-motorsport/issues/2
+= 0.0.3 =
+* Added: Support co-existence of [bw_contact_form] with Easy WP SMTP [github bobbingwide SG-Motorsport issues 2]
 * Added: screenshot.png
 * Changed: Improve styling for tel and email in mega menu and footer bar
 * Changed: Hide h1 in product display
 * Changed: Don't display Tags in single-product meta
 * Fixed: Remove logic to enqueue child theme stylesheet. It's done automatically
-
-# 0.0.2 
+ 
+= 0.0.2 =
 * Changed: Improve formatting of Customer services telephone
 * Changed: Custom styling for the Product Categories widget
 * Added: Styling for the widgets in the mega menu
 * Noted: Experimented with filters to set the mega menu background colour
 * Changed: Hide the word 'Menu' for the hamburger menu
 
-# 0.0.1 
+= 0.0.1 =
 * Tested: with Storefront 2.3.3
 * Tested: with WooCommerce 3.4.5
 * Tested: with WordPress 4.9.8
 * Tested: with PHP 7.1
 
 
-## Copyright 
+== Copyright == 
 (C) Copyright Bobbing Wide 2018
 
 * This program is free software: you can redistribute it and/or modify
@@ -64,8 +63,8 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
-## Notes 
-SG-Motorsport does not bundle Third Party Resources.
+== Notes ==
+SG-Motorsport does not bundle Third Party Resources. 
 Dependent upon the Storefront theme and WooCommerce.
 
 
