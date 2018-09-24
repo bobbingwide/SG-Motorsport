@@ -6,7 +6,7 @@
 * Tags: e-commerce, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, post-formats, rtl-language-support, sticky-post, threaded-comments
 * Requires at least: 4.9.8
 * Tested up to: 4.9.8
-* Version: 0.0.3
+* Version: 0.0.4
 * License: GPLv2 or later
 * License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,10 @@ Implemented on sgmotorsport.biz
 
 
 ## Change Log	
+
+# 0.0.4 
+* Added: Implement quantity field for home and shop page https://github.com/bobbingwide/sg-motorsport/issues/3
+* Changed: Improved styling for iPhone 4s https://github.com/bobbingwide/sg-motorsport/issues/1
 
 # 0.0.3 
 * Added: Support co-existence of [bw_contact_form] with Easy WP SMTP https://github.com/bobbingwide/sg-motorsport/issues/2
@@ -67,5 +71,6 @@ GNU General Public License for more details.
 ## Notes 
 SG-Motorsport does not bundle Third Party Resources.
 Dependent upon the Storefront theme and WooCommerce.
+Relies on the existence of some plugins and the absence of others.
 
 

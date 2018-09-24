@@ -2,7 +2,7 @@
 Theme Name: SG-Motorsport
 Author: Herb Miller, Stephen Goodyear
 Description: Child theme for SG Motorsport
-Version: 0.0.3
+Version: 0.0.4
 Template: storefront
 Template Version: 2.3.3
 
@@ -92,4 +92,29 @@ div.smm-row {
 
 div.entry-content h1 {
 	display: none; 
+}
+
+/**
+ * Styling for the iPhone 4S and other small devices
+ */
+@media screen and ( max-width: 480px ) {
+	.col-full {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.sph-hero .overlay {
+		padding: 1.618em;
+	}
+
+	.sph-inner-wrapper h1 { 
+		font-size: 1.69em;
+	}
+	.sph-inner {
+		padding: 0px;
+	}
+
+	.w50pc {
+		width: 100%;
+	}
 }
