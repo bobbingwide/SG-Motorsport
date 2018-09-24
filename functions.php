@@ -5,6 +5,7 @@
 add_filter( 'woocommerce_background_image_regeneration', '__return_false' );
 add_filter( 'storefront_menu_toggle_text', '__return_empty_string' );
 add_filter( 'bw_email_message', 'sgm_bw_email_message', 11, 2 );
+add_filter( 'woocommerce_loop_add_to_cart_link', 'sgm_add_quantity_fields', 10, 3 );
 
 
 /**
@@ -18,11 +19,35 @@ add_filter( 'bw_email_message', 'sgm_bw_email_message', 11, 2 );
  * @return string updated message 
  */
 function sgm_bw_email_message( $message, $fields ) {
-	bw_trace2();
+	//bw_trace2();
 	$extra_bits = bw_replace_fields( "<br />From: %from%<br />Name: %contact%", $fields );
 	$message .= $extra_bits;
 	return $message;
 }
+
+
+/**
+ * Adds quantity field to simple products
+ * 
+ * @param string $html
+ * @param object $product
+ * @param array $args
+ * @return string 
+ */
+function sgm_add_quantity_fields( $html, $product, $args) {
+	//bw_trace2();
+	//bw_backtrace();
+	if ( $product && $product->is_type( 'simple' ) && $product->is_purchasable() && $product->is_in_stock() && ! $product->is_sold_individually() ) {
+		//rewrite form code for add to cart button
+		$html = '<form action="' . esc_url( $product->add_to_cart_url() ) . '" class="cart" method="post" enctype="multipart/form-data">';
+		$html .= woocommerce_quantity_input( array(), $product, false );
+		$html .= '<button type="submit" data-quantity="1" data-product_id="' . $product->get_id() . '" class="button alt ajax_add_to_cart add_to_cart_button product_type_simple">' . esc_html( $product->add_to_cart_text() ) . '</button>';
+		$html .= '</form>';
+	}
+	return $html;
+}
+
+
 
 /** 
  * This is no good since the colour is used for the whole of the header
